@@ -107,12 +107,12 @@
   {
     "field_name": "run_benchmark Command Plus Options for Baseline Run",
     "source_file": "BenchmarkSpecDefinitions.xlsx::Workload_Definitions",
-    "value": "bash run_benchmark.sh --baseline --validate --device-id 0 --direction all --pinned-memory true --min-bytes 1024 --max-bytes 1073741824 --step-factor 2 --warmup-iters 5 --num-iterations 563"
+    "value": "bash run_benchmark.sh --baseline --validate --device-id 0 --direction all --pinned-memory true --min-bytes 1024 --max-bytes 1073741824 --step-factor 2 --warmup-iters 5 --num-iterations 489"
   },
   {
     "field_name": "run_benchmark Command Plus Options for Extended Run",
     "source_file": "BenchmarkSpecDefinitions.xlsx::Workload_Definitions",
-    "value": "bash run_benchmark.sh --extended --validate --device-id 0 --direction all --pinned-memory true --min-bytes 1024 --max-bytes 1073741824 --step-factor 2 --warmup-iters 10 --num-iterations 2200"
+    "value": "bash run_benchmark.sh --extended --validate --device-id 0 --direction all --pinned-memory true --min-bytes 1024 --max-bytes 1073741824 --step-factor 2 --warmup-iters 10 --num-iterations 1720"
   },
   {
     "field_name": "Output Fields / Metrics to Parse",
@@ -407,7 +407,7 @@
   {
     "field_name": "Profile Parameter Values",
     "source_file": "BenchmarkSpecDefinitions.xlsx::Parameters_SmokeBaselineExtend",
-    "value": "{\"device_id\": {\"smoke\": \"0\", \"baseline\": \"0\", \"extended\": \"0\", \"notes\": \"\"}, \"direction\": {\"smoke\": \"all\", \"baseline\": \"all\", \"extended\": \"all\", \"notes\": \"\"}, \"pinned_memory\": {\"smoke\": \"true\", \"baseline\": \"true\", \"extended\": \"true\", \"notes\": \"\"}, \"min_bytes\": {\"smoke\": \"1024\", \"baseline\": \"1024\", \"extended\": \"1024\", \"notes\": \"\"}, \"max_bytes\": {\"smoke\": \"4096\", \"baseline\": \"1073741824\", \"extended\": \"1073741824\", \"notes\": \"\"}, \"step_factor\": {\"smoke\": \"2\", \"baseline\": \"2\", \"extended\": \"2\", \"notes\": \"\"}, \"warmup_iters\": {\"smoke\": \"1\", \"baseline\": \"5\", \"extended\": \"10\", \"notes\": \"\"}, \"num_iterations\": {\"smoke\": \"3\", \"baseline\": \"563\", \"extended\": \"2200\", \"notes\": \"00_75 H100 20260905: 2100 iters was 11:29. 750 ~4 min. | 2026-10-19 GARY_LEDGER (runtime_ledger_Aggregate_375_376_377_378_20261019a_845am; targets baseline under 5 min, extended under 15 min): baseline 750 measured 5:05/5:08 (slower run); fixed start ~35s from smoke; 750 -> 563, predicted ~3:59. Unconfirmed by a fresh run.\"}}"
+    "value": "{\"device_id\": {\"smoke\": \"0\", \"baseline\": \"0\", \"extended\": \"0\", \"notes\": \"\"}, \"direction\": {\"smoke\": \"all\", \"baseline\": \"all\", \"extended\": \"all\", \"notes\": \"\"}, \"pinned_memory\": {\"smoke\": \"true\", \"baseline\": \"true\", \"extended\": \"true\", \"notes\": \"\"}, \"min_bytes\": {\"smoke\": \"1024\", \"baseline\": \"1024\", \"extended\": \"1024\", \"notes\": \"\"}, \"max_bytes\": {\"smoke\": \"4096\", \"baseline\": \"1073741824\", \"extended\": \"1073741824\", \"notes\": \"\"}, \"step_factor\": {\"smoke\": \"2\", \"baseline\": \"2\", \"extended\": \"2\", \"notes\": \"\"}, \"warmup_iters\": {\"smoke\": \"1\", \"baseline\": \"5\", \"extended\": \"10\", \"notes\": \"\"}, \"num_iterations\": {\"smoke\": \"3\", \"baseline\": \"489\", \"extended\": \"1720\", \"notes\": \"00_75 H100 20260905: 2100 iters was 11:29. 750 ~4 min. | 2026-10-19 GARY_LEDGER (runtime_ledger_Aggregate_375_376_377_378_20261019a_845am; targets baseline under 5 min, extended under 15 min): baseline 750 measured 5:05/5:08 (slower run); fixed start ~35s from smoke; 750 -> 563, predicted ~3:59. Unconfirmed by a fresh run. | 2026-10-21 baseline 563 -> 489; 214 and 414 now share one value (as 1xx/3xx do). Ledger-predicted baseline runtime 24.04 ~3:57, 26.04 ~3:58 (limits: baseline 5:00, extended 15:00). | 2026-10-21 extended 2200 -> 1720; 214 and 414 now share one value (as 1xx/3xx do). Ledger-predicted extended runtime 24.04 ~10:47, 26.04 ~12:22 (limits: baseline 5:00, extended 15:00)\"}}"
   },
   {
     "field_name": "Profile Command Authorship",
