@@ -3,7 +3,7 @@
 **Main goal:** Measure H2D/D2H/D2D transfer bandwidth  
 **Tools:** Compile cuda_memcpy.cu with nvcc; run bin/cuda_memcpy for H2D, D2H, D2D, and H2D_pageable
 
-Reference results measured by the maintainer on the system shown in each section (generator TEMPLATE_00_145 · recorded 2026-11-17). Your own runs write `results/RESULTS_ACTUAL.md` in the same format.
+Reference results measured by the maintainer on the system shown in each section (generator TEMPLATE_00_146 · recorded 2026-11-18). Your own runs write `results/RESULTS_ACTUAL.md` in the same format.
 
 > Smoke runs use deliberately small sizes. They check that the workload installs and runs end to end; their numbers are not performance results. Baseline and extended are.
 
@@ -11,18 +11,18 @@ Reference results measured by the maintainer on the system shown in each section
 ## smoke
 
 - **System:** 1× NVIDIA H100 NVL (95830 MiB) · AMD EPYC 9374F 32-Core Processor · Ubuntu 24.04.5 LTS · kernel 6.8.0-138-generic · driver 595.112.07
-- **Run:** 2026-11-17T11:04:39Z · status **PASS** (exit 0)
-- **Time (mm:ss):** setup 00:28 · benchmark 00:47 · whole run 01:20
-- **Source:** run 214_20261117_110439
+- **Run:** 2026-11-18T10:53:05Z · status **PASS** (exit 0)
+- **Time (mm:ss):** setup 00:29 · benchmark 00:43 · whole run 01:15
+- **Source:** run 214_20261118_105305
 - **Command:** `bash run_benchmark.sh --smoke --device-id 0 --direction all --pinned-memory true --min-bytes 1024 --max-bytes 268435456 --step-factor 2 --warmup-iters 1 --num-iterations 10`
 
 | # | Metric | Result |
 |---|---|---|
-| 1 | H2D bandwidth at max transfer size, GB/s (bandwidth_h2d_gb_s) | 57.573495 |
-| 2 | D2H bandwidth at max transfer size, GB/s (bandwidth_d2h_gb_s) | 57.944699 |
-| 3 | D2D bandwidth at max transfer size, GB/s (bandwidth_d2d_gb_s) | 1753.65486 |
-| 4 | H2D latency at min transfer size, us (latency_h2d_us) | 6.2784 |
+| 1 | H2D bandwidth at max transfer size, GB/s (bandwidth_h2d_gb_s) | 57.384881 |
+| 2 | D2H bandwidth at max transfer size, GB/s (bandwidth_d2h_gb_s) | 56.890199 |
+| 3 | D2D bandwidth at max transfer size, GB/s (bandwidth_d2d_gb_s) | 1755.710202 |
+| 4 | H2D latency at min transfer size, us (latency_h2d_us) | 5.552 |
 | 5 | D2H latency at min transfer size, us (latency_d2h_us) | 6.8896 |
-| 6 | D2D latency at min transfer size, us (latency_d2d_us) | 2.9056 |
-| 7 | Pinned-over-pageable H2D bandwidth ratio (pinned_vs_pageable_bandwidth_ratio) | 2.2515446019278498 |
+| 6 | D2D latency at min transfer size, us (latency_d2d_us) | 2.7744 |
+| 7 | Pinned-over-pageable H2D bandwidth ratio (pinned_vs_pageable_bandwidth_ratio) | 2.2678937623643147 |
 <!-- /profile:smoke -->
