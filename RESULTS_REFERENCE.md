@@ -11,18 +11,18 @@ Reference results from the validation run on the system shown in each section (r
 ## smoke
 
 - **System:** 1× NVIDIA H100 80GB HBM3 (81559 MiB) · Intel(R) Xeon(R) Platinum 8470 · Ubuntu 24.04.5 LTS · kernel 6.8.0-149-generic · driver 595.112.07
-- **Run:** 2026-11-22T10:57:08Z · status **PASS** (exit 0)
-- **Time (mm:ss):** setup 00:31 · benchmark 00:35 · whole run 01:11
-- **Source:** run 214_20261122_105708
+- **Run:** 2026-11-22T14:23:28Z · status **PASS** (exit 0)
+- **Time (mm:ss):** setup 00:31 · benchmark 00:37 · whole run 01:15
+- **Source:** run 214_20261122_142328
 - **Command:** `bash run_benchmark.sh --smoke --device-id 0 --direction all --pinned-memory true --min-bytes 1024 --max-bytes 268435456 --step-factor 2 --warmup-iters 1 --num-iterations 10`
 
 | # | Metric | Result |
 |---|---|---|
-| 1 | H2D bandwidth at max transfer size, GB/s (bandwidth_h2d_gb_s) | 54.555225 |
-| 2 | D2H bandwidth at max transfer size, GB/s (bandwidth_d2h_gb_s) | 55.40275 |
-| 3 | D2D bandwidth at max transfer size, GB/s (bandwidth_d2d_gb_s) | 1498.554428 |
-| 4 | H2D latency at min transfer size, us (latency_h2d_us) | 8.3328 |
-| 5 | D2H latency at min transfer size, us (latency_d2h_us) | 7.7472 |
-| 6 | D2D latency at min transfer size, us (latency_d2d_us) | 2.9312 |
-| 7 | Pinned-over-pageable H2D bandwidth ratio (pinned_vs_pageable_bandwidth_ratio) | 7.112068291217756 |
+| 1 | H2D bandwidth at max transfer size, GB/s (bandwidth_h2d_gb_s) | 55.473316 |
+| 2 | D2H bandwidth at max transfer size, GB/s (bandwidth_d2h_gb_s) | 54.809556 |
+| 3 | D2D bandwidth at max transfer size, GB/s (bandwidth_d2d_gb_s) | 1496.869831 |
+| 4 | H2D latency at min transfer size, us (latency_h2d_us) | 8.352 |
+| 5 | D2H latency at min transfer size, us (latency_d2h_us) | 7.8624 |
+| 6 | D2D latency at min transfer size, us (latency_d2d_us) | 2.7488 |
+| 7 | Pinned-over-pageable H2D bandwidth ratio (pinned_vs_pageable_bandwidth_ratio) | 5.514668768351928 |
 <!-- /profile:smoke -->
